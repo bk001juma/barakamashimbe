@@ -1,5 +1,3 @@
-
-
 const imagesPrefix =
   "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages";
 

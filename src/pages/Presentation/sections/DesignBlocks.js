@@ -22,12 +22,12 @@ const skillsData = [
         count: "4+ Projects",
       },
       {
-        image: "https://via.placeholder.com/300x200/2196F3/white?text=Dart", 
+        image: "https://via.placeholder.com/300x200/2196F3/white?text=Dart",
         name: "Dart Programming",
         count: "Expert",
       },
       {
-        image: "https://via.placeholder.com/300x200/FF9800/white?text=UI%2FUX", 
+        image: "https://via.placeholder.com/300x200/FF9800/white?text=UI%2FUX",
         name: "Mobile UI/UX",
         count: "Figma Design",
       },
@@ -38,17 +38,17 @@ const skillsData = [
     description: "Modern web development with React and more",
     items: [
       {
-        image: "https://via.placeholder.com/300x200/61DAFB/white?text=React", 
+        image: "https://via.placeholder.com/300x200/61DAFB/white?text=React",
         name: "React.js",
         count: "2+ Projects",
       },
       {
-        image: "https://via.placeholder.com/300x200/1572B6/white?text=CSS3", 
+        image: "https://via.placeholder.com/300x200/1572B6/white?text=CSS3",
         name: "CSS & Styling",
         count: "Material-UI",
       },
       {
-        image: "https://via.placeholder.com/300x200/000000/white?text=Git", 
+        image: "https://via.placeholder.com/300x200/000000/white?text=Git",
         name: "Version Control",
         count: "Git & GitHub",
       },
@@ -59,17 +59,17 @@ const skillsData = [
     description: "Server-side development and database management",
     items: [
       {
-        image: "https://via.placeholder.com/300x200/007396/white?text=Java", 
+        image: "https://via.placeholder.com/300x200/007396/white?text=Java",
         name: "Java",
         count: "Intermediate",
       },
       {
-        image: "https://via.placeholder.com/300x200/777BB4/white?text=PHP", 
+        image: "https://via.placeholder.com/300x200/777BB4/white?text=PHP",
         name: "PHP",
         count: "Intermediate",
       },
       {
-        image: "https://via.placeholder.com/300x200/336791/white?text=PostgreSQL", 
+        image: "https://via.placeholder.com/300x200/336791/white?text=PostgreSQL",
         name: "PostgreSQL",
         count: "Database Management",
       },
@@ -125,7 +125,8 @@ function DesignBlocks() {
             Skills & Technologies
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            A comprehensive overview of my technical skills and the technologies I use to build amazing applications.
+            A comprehensive overview of my technical skills and the technologies I use to build
+            amazing applications.
           </MKTypography>
         </Grid>
       </Container>

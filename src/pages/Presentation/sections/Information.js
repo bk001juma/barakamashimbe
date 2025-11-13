@@ -1,11 +1,10 @@
-
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
 import RotatingCard from "examples/Cards/RotatingCard";
@@ -26,59 +25,68 @@ function Information() {
             <RotatingCard>
               <RotatingCardFront
                 image={bgFront}
-                icon="touch_app"
+                icon="person"
                 title={
                   <>
-                    Feel the
+                    About
                     <br />
-                    Material Kit
+                    Me
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Full-Stack & Mobile Developer from Tanzania"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="Baraka Juma Mashimbe"
+                description="Passionate software developer specializing in Flutter mobile applications and modern web technologies. Bachelor of Science in Information Technology and Systems."
                 action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  type: "external",
+                  route: "mailto:juannabarack001@gmail.com",
+                  label: "Contact Me",
                 }}
               />
             </RotatingCard>
           </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
+            <MKTypography variant="h3" fontWeight="bold" mb={3}>
+              My Journey in Tech
+            </MKTypography>
+            <MKTypography variant="body1" color="text" mb={4}>
+              Im a passionate software developer based in Dar es Salaam, Tanzania, with expertise
+              building cross-platform mobile applications using Flutter and modern web applications
+              applications with React. I hold a Bachelor degree in Information Technology and
+              Systems and have hands-on experience in full-stack development.
+            </MKTypography>
+
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="flutter_dash" // Flutter icon
+                  title="Mobile Development"
+                  description="Specialized in building cross-platform mobile applications using Flutter and Dart for both iOS and Android."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="code"
+                  title="Full-Stack Skills"
+                  description="Proficient in both frontend (React, JavaScript) and backend (Java, PHP, PostgreSQL) technologies."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="design_services"
+                  title="UI/UX Design"
+                  description="Experience in creating modern, user-friendly interfaces using Figma and Material Design principles."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="school"
+                  title="Continuous Learning"
+                  description="Committed to staying updated with the latest technologies and best practices in software development."
                 />
               </Grid>
             </Grid>
