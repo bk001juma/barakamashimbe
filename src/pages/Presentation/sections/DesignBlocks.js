@@ -1,21 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// react-router-dom components
-import { Link } from "react-router-dom";
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -28,11 +10,75 @@ import MKTypography from "components/MKTypography";
 // Presentation page components
 import ExampleCard from "pages/Presentation/components/ExampleCard";
 
-// Data
-import data from "pages/Presentation/sections/data/designBlocksData";
+// Skills data - we'll create this
+const skillsData = [
+  {
+    title: "Mobile Development",
+    description: "Cross-platform mobile app development using Flutter",
+    items: [
+      {
+        image: "https://via.placeholder.com/300x200/4CAF50/white?text=Flutter", // Replace with actual image
+        name: "Flutter Framework",
+        count: "4+ Projects",
+      },
+      {
+        image: "https://via.placeholder.com/300x200/2196F3/white?text=Dart", 
+        name: "Dart Programming",
+        count: "Expert",
+      },
+      {
+        image: "https://via.placeholder.com/300x200/FF9800/white?text=UI%2FUX", 
+        name: "Mobile UI/UX",
+        count: "Figma Design",
+      },
+    ],
+  },
+  {
+    title: "Frontend Development",
+    description: "Modern web development with React and more",
+    items: [
+      {
+        image: "https://via.placeholder.com/300x200/61DAFB/white?text=React", 
+        name: "React.js",
+        count: "2+ Projects",
+      },
+      {
+        image: "https://via.placeholder.com/300x200/1572B6/white?text=CSS3", 
+        name: "CSS & Styling",
+        count: "Material-UI",
+      },
+      {
+        image: "https://via.placeholder.com/300x200/000000/white?text=Git", 
+        name: "Version Control",
+        count: "Git & GitHub",
+      },
+    ],
+  },
+  {
+    title: "Backend & Databases",
+    description: "Server-side development and database management",
+    items: [
+      {
+        image: "https://via.placeholder.com/300x200/007396/white?text=Java", 
+        name: "Java",
+        count: "Intermediate",
+      },
+      {
+        image: "https://via.placeholder.com/300x200/777BB4/white?text=PHP", 
+        name: "PHP",
+        count: "Intermediate",
+      },
+      {
+        image: "https://via.placeholder.com/300x200/336791/white?text=PostgreSQL", 
+        name: "PostgreSQL",
+        count: "Database Management",
+      },
+    ],
+  },
+];
 
 function DesignBlocks() {
-  const renderData = data.map(({ title, description, items }) => (
+  const renderData = skillsData.map(({ title, description, items }) => (
     <Grid container spacing={3} sx={{ mb: 10 }} key={title}>
       <Grid item xs={12} lg={3}>
         <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
@@ -46,11 +92,9 @@ function DesignBlocks() {
       </Grid>
       <Grid item xs={12} lg={9}>
         <Grid container spacing={3}>
-          {items.map(({ image, name, count, route, pro }) => (
+          {items.map(({ image, name, count }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
-              <Link to={pro ? "/" : route}>
-                <ExampleCard image={image} name={name} count={count} pro={pro} />
-              </Link>
+              <ExampleCard image={image} name={name} count={count} />
             </Grid>
           ))}
         </Grid>
@@ -73,16 +117,15 @@ function DesignBlocks() {
           <MKBadge
             variant="contained"
             color="info"
-            badgeContent="Infinite combinations"
+            badgeContent="Technical Expertise"
             container
             sx={{ mb: 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
-            Huge collection of sections
+            Skills & Technologies
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and customise into pixel
-            perfect pages.
+            A comprehensive overview of my technical skills and the technologies I use to build amazing applications.
           </MKTypography>
         </Grid>
       </Container>
